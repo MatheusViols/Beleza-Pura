@@ -1,0 +1,185 @@
+* {
+    margin: 0; /*espaço ou margem interna nesse caso zerada*/
+    padding: 0;/*espaço ou margem interna nesse caso zerada*/
+}
+.container{
+    width:1920px;/*largura total da div*/
+    height: 1080px;/*Altura total da div*/
+
+    display: grid;/*define o container como grid*/
+    grid-template-areas: /*Define as áreas*/
+    "header"
+    "main"
+    "footer";
+
+    grid-template-rows: 1fr 4fr 1fr;/*Altura das linhas*/
+
+}
+
+/* Estilização de header */
+header{
+    grid-area: header;/*Area do header*/
+    background-color: #FCE4EC;/*Define cor da area do header*/
+
+    box-shadow: 0px 10px 20px black;/*Define sombra da area do header*/
+
+
+}
+#marca{
+    width: 100%;/*largura total da div*/
+    display: flex;/*Define a area como flexivel*/
+    gap: 8%; /*espaço entre os elementos*/
+
+    padding-top: 10px; /*distancia parte de cima*/
+    padding-bottom: 10px;/*distancia parte de baixo*/
+
+
+}
+#logo{
+    width: 200px;/*largura total da div*/
+    height: 200px;/*Altura total da div*/
+
+    margin-left: 6%; /*distancia da borda da esquerda da div*/
+    
+    border-radius: 50%; /*Torna a imagem arredondada*/
+    border: 3px solid #444; /*Define a borda*/
+}
+#nome-marca{
+    font-family: 'Limelight', sans-serif; /*Define a fonte usada*/
+    font-weight: 400px;/*Peso da fonte*/
+    font-size: 150px;/*Tamanho da fonte*/
+    text-align: center;/*Alinhamento do texto*/
+    color: #444; /*Coloração do texto*/
+
+
+}
+/*------------------------------------------*/
+
+
+/* Estilização de main */
+main{
+    grid-area: main; /*Define area como grid*/
+
+    display: flex; /*Torna conteudo flexivel*/
+    justify-content: center; /*Centraliza conteudo*/
+    align-items: center;/*Define o alinhamento de intens*/
+    background-image: linear-gradient(360deg, #FCE4EC, #fff, #FCE4EC);/*Cor dos fundo*/
+}
+#produto{
+    display: grid; /*Define modo do display como grid*/
+
+    width: 75%;/*Define largura do display*/
+    height: 75%;/*Define altura do display*/
+
+
+    grid-template-areas: /*Define area como grid*/
+    "box1 box2"
+    "box3 box4";
+
+    grid-template-rows: 1fr 1fr; /*Define a quantidade de linhas*/
+    grid-template-columns: 1fr 1fr;/*Define a quantidade de colunas*/
+
+
+    border: 5px solid #444; /*Define a borda*/
+
+    background-image: linear-gradient(360deg, #FCE4EC, #fff, #FCE4EC);
+
+
+    box-shadow: 0px 30px 80px black;/*define a sombra*/
+}
+
+#box1{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#img-produto{
+    grid-area: box1; /*Define area como grid*/
+    width:92%;/*Define largura total da div*/
+    height: 92%;/*Define Altura total da div*/
+
+    border-radius: 40%;/*Define a borda*/
+
+}
+
+#box2{
+    padding-top: 15%;/*Define o padding do topo*/
+    padding-right: 5%;
+}
+.benef{
+    font-family: 'Limelight', sans-serif; /*Define a fonte*/
+    font-size: 100px;/*Define o tamanho da fonte*/
+
+    list-style-type: none;/*Retira estilização da lista*/
+    text-align: center;/*Define o alinhamento do texto*/
+    color: #444;/*Define a cor do texto*/
+
+    text-shadow: 
+    1px 2px white,
+    1px 3px white,
+    1px 4px white;
+
+}
+#benef-p{
+    font-family: 'Limelight', sans-serif;/*Define a fonte*/
+    font-size: 20px;/*Define o tamnho da fonte*/
+    text-align: center;/*Define o alinhamento do texto*/
+    color: #444;/*Define cor do texto*/
+
+}
+
+#box3{
+    display: flex; /*Define conteudo do box como flexivel*/
+    justify-content: center;/*centraliza o conteudo*/
+    align-items: center;/*Alinhamento do conteudo*/
+    
+    padding: 20px;
+
+}
+
+#box4{
+    display: flex;/*Define contreudo como flexivel*/
+    justify-content: center;/*Centraliza conteudo*/
+    align-items: center;/*Alinhaamento do conteudo*/
+
+    padding-right: 5%;
+
+}
+#bt-compra{
+    width: 600px;/*Largura da div*/
+    height:100px;/*Altura da div*/
+
+    font-family: "Limelight", sans-serif; /*define estilo da fonte */
+    font-size: 50px;/* define tamanho da fonte */
+
+    background-color: #FCE4EC; /*define cor de fundo*/
+
+    box-shadow: 0px 5px 10px black;
+
+}
+#bt-compra:hover{
+    background-color: white; /* define cor de fundo */
+    width: 620px; /* define largura do botão quando o mouse está por cima*/
+    height:120px;/* define altura do botão quando o mouse está por cima */
+
+    font-size: 60px; /* define tamanho da fonte quanod o mouse está por cima */
+}
+
+#desc{
+    font-family: 'Limelight', sans-serif; /* define estilo da fonte */
+    font-size: 25px; /* define tamanho da fonte */
+    text-align: center; /* define o alinhamento como central */
+}
+
+
+
+/* Estilização de footer */
+footer{
+    display: flex;/*Define conteudo como flexivel*/
+    justify-content: center;/*Centraliza o conteudo*/
+    align-items: center;/*Alinhamento do conteudo*/
+    height: 100px;/*Altura do conteudo*/
+    background-color: #FCE4EC;/*Define cor de fundo*/
+
+}
